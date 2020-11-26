@@ -14,10 +14,6 @@ const postroute = require('./Posts/posts');
 //posts route
 app.use('/posts',postroute);
 
-app.get('/',(req,res)=>{
-    res.send('helloworld!!!');
-});
-
 
 const db = process.env.DB_CONN;
 const port = process.env.PORT || 3000;
